@@ -1,0 +1,45 @@
+<input type="text" ng-model="search.$" class="search-query" placeholder="Search">
+<table>
+<thead>
+<tr>
+<th ng-click="sort_column('name')">Project</th>
+<th ng-click="sort_column('description')">Description</th>
+<th ng-click="sort_column('author')">Author</th>
+<th ng-click="sort_column('filesize')">File Size</th>
+<th ng-click="sort_column('creationdate')">Creation Date</th>
+<th><a href="#/new">Add</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><input type="text" ng-model="search.name" class="search-query" style="width: 60px" placeholder="project"></td>
+<td><input type="text" ng-model="search.description" class="search-query" style="width: 70px" placeholder="description"></td>
+<td><input type="text" ng-model="search.author" class="search-query" style="width: 60px" style="width: 70px" placeholder="author"></td>
+<td><input type="text" ng-model="search.filesize" class="search-query" style="width: 60px" placeholder="file size"></td>
+<td><input type="text" ng-model="search.creationdate" class="search-query" style="width: 80px" placeholder="creation date"></td>
+</tr>
+<tr ui-draggable="true" drag="project" ng-repeat="project in projects.projects | filter:search | orderBy:column_sort.sort_by:column_sort.reverse">
+<td><a href="{{project.site}}" target="_blank">{{project.name}}</a></td>
+<td>{{project.description}}</td>
+<td>{{project.author}}</td>
+<td>{{project.filesize}}</td>
+<td>{{project.creationdate}}</td>
+<td>
+<a href="#/edit/{{project.$id}}">Edit</a>
+</td>
+<td>
+<a ng-click="remove(project.$id)">Remove</a>
+</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<div>Cart Area: (name:size)</div>
+<div class="thumbnail" ui-on-Drop="onDrop($data,cart)" ui-draggable="true" style='height:100px;'>
+<table>
+<tr>
+<td ng-repeat="cart_itm in cart" style="padding-right:10px"><a href="{{cart_itm.site}}" target="_blank">{{cart_itm.name}}</a>: {{cart_itm.filesize}}</td>
+</tr>
+</table>
+</div>
+<div>Cart size: {{cart_size}}</div>

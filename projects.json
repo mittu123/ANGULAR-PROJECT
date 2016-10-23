@@ -1,0 +1,13 @@
+[
+{"$id": "1", "name":"AngularJS","description":"HTML enhanced for web apps!","site":"http://angularjs.org/","author":"author_1","filesize":1000,"creationdate":"09/25/2014"},
+{"$id": "2", "name":"Backbone","description":"Models for your apps.","site":"http://documentcloud.github.com/backbone/","author":"author_2","filesize":2000,"creationdate":"09/26/2014"},
+{"$id": "3", "name":"Batman","description":"Quick and beautiful.","site":"http://batmanjs.org/","author":"author_3","filesize":3000,"creationdate":"09/26/2014"},
+{"$id": "4", "name":"Cappucino","description":"Objective-J.","site":"http://cappuccino.org/","author":"author_4","filesize":4000,"creationdate":"09/26/2014"},
+{"$id": "5", "name":"Ember","description":"Ambitious web apps.","site":"http://emberjs.com/","author":"author_5","filesize":5000,"creationdate":"09/26/2014"},
+{"$id": "6", "name":"GWT","description":"JS in Java.","site":"https://developers.google.com/web-toolkit/","author":"author_6","filesize":6000,"creationdate":"09/26/2014"},
+{"$id": "7", "name":"jQuery","description":"Write less, do more.","site":"http://jquery.com/","author":"author_7","filesize":7000,"creationdate":"09/27/2014"},
+{"$id": "8", "name":"Knockout","description":"MVVM pattern.","site":"http://knockoutjs.com/","author":"author_8","filesize":8000,"creationdate":"09/27/2014"},
+{"$id": "9", "name":"Sammy","description":"Small with class.","site":"http://sammyjs.org/","author":"author_9","filesize":9000,"creationdate":"09/27/2014"},
+{"$id": "10", "name":"Spine","description":"Awesome MVC Apps.","site":"http://spinejs.com/","author":"author_10","filesize":10000,"creationdate":"09/28/2014"},
+{"$id": "11", "name":"SproutCore","description":"Innovative web-apps.","site":"http://sproutcore.com/","author":"author_11","filesize":11000,"creationdate":"09/29/2014"}
+]
